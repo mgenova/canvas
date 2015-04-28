@@ -1,0 +1,397 @@
+/* replace the aqua green background with something that matches your color scheme.*/
+#header {
+  /*you can use .pngs with alpha transparency since you dont have to worry about IE6*/
+  background: url("header_bg.png?v1") repeat-x scroll left center transparent;
+}
+
+/*replace the "Canvas" logo with your school's*/
+#header-logo, #header.no-user #header-logo {
+  background: url("header_logo.png?v1") no-repeat scroll 0 0 transparent;
+  bottom: 10px;
+  height: 50px;
+  left: 6px;
+  width: 191px;
+}
+/* if you are going to replace the Canvas logo on the top left with your school's, 
+you should move a (smaller) Cavas logo to the right side of the header'*/
+#header-logo-secondary {
+  /* note, you should set up you webserver to set the right headers to cache these 
+     images you link to for a long time (eg: 1 year) and change the querystring 
+     (the part that says "?v1") to force users to download a new version if you 
+     change it, see: http://developer.yahoo.com/performance/rules.html#expires */
+  background: url("header_canvas_logo2.png?v1") no-repeat scroll 0 0 transparent;
+  bottom: 13px;
+  height: 26px;
+  position: absolute;
+  right: 26px;
+  width: 135px;
+  display: block;
+}
+/*make room for the menu since my sample logo is bigger than default canvas logo*/
+#menu{ margin-left: 200px; }
+
+/*make the menu lettering white and make it go back to grey when you hover over*/
+.menu-item .menu-item-title, .menu-item .menu-item-no-drop { color: #FFFFFF; }
+.menu-item.hover .menu-item-title { color: #555555; }
+
+/*style the #identity (the thing that says "Ryan Shaw | inbox | profile | logout | (feedback)" in top right) */
+#identity {  }
+#identity { background-image: none; }
+#identity .user_name a{ color: #ffffff !important; }
+#identity .user_name a{ font-weight:bold; }
+#identity a { color: #fff; }
+#identity #feedback_link{ border-color: #333; background-color: #333; }
+#identity .inbox a .unread-messages-count { background-color: #333; }
+
+/*
+#identity ul{ background-color:#769f19 ;}
+*/
+
+#topbar ul{
+  background-color: #769f19 ;}
+
+
+
+
+
+
+/*change the background color and the color of 'stay signed in'*/
+#modal-box.login-box {
+background-color: #000000 !important
+color: #2784A0;
+}
+ 
+
+
+/*this will remove the extra canvas logo*/
+body.modal #modal-box.login-box h1 {
+background: none;
+height: 235px;
+}
+ 
+
+
+
+
+/*change the color of 'don't know your password'*/
+body.modal #modal-box.login-box a 
+{ color: #fff !important; 
+
+}
+ 
+/*change the color of the login button*/
+body.modal #modal-box .btn, body.modal #login-box .btn
+{
+background-color: #94c81d !important;
+background-image: none !important;
+border-color: #94c81d;
+}
+ 
+#login_form .btn-primary, #login_form .btn-primary:hover {
+background-color: #ae5321;
+background-image: none;
+border: none !important;
+}
+
+div.login-options{
+  color:#ffffff;
+}
+
+
+
+#footer .footer-logo {
+  margin-left: 80px;
+}
+
+body {
+    background-color: transparent;
+    background-image: url("bg.png");
+    background-repeat: repeat;
+    background-position: left top;
+    min-width: 510px
+
+}
+
+/*change location of image and resize to match image height and width*/
+#modal-box-inner {
+background: url("mbta_login.png?v1") no-repeat;
+
+height: 410px;
+width: 680px;
+border-radius: 23px; 
+-moz-border-radius: 23px; 
+-webkit-border-radius: 23px; 
+box-shadow:6px 7px 7px;
+
+
+/*adjust to move image to left and top*/
+margin-left: -25px;
+margin-top: -28px;
+color: #555 !important;
+}
+
+
+
+a {
+  color:#769F19;
+  text-decoration: none;
+}
+
+a:hover{
+  color:#475e11;
+  text-decoration: underline;
+}
+
+.recent_activity > li .unread-count {
+  background-color:#769F19;
+}
+
+.fake-link {
+  color:#769F19;
+}
+
+ul.messages > li span.date, ul.conversations > li span.date, div.conversations > ul > li span.date {
+  color:#769F19;
+
+}
+
+
+#create_message_form table th, #forward_message_form table th {
+  color:#769F19;
+}
+
+.btn-primary{
+  background-color:#769F19;
+  background-image: none;
+}
+
+.btn-primary:hover{
+  background-color:#475e11;
+  background-image: none;
+}
+
+ul.messages>li span.date,ul.conversations>li span.date,div.conversations>ul>li span.date{
+  color:#769F19;
+
+}
+
+ul.messages>li span.others,ul.conversations>li span.others,div.conversations>ul>li span.others{
+  color:#769F19;
+}
+
+ul.messages>li.selected,ul.messages>li.submission.selected ul>li,ul.messages>li.submission.selected ul>li.header,ul.conversations>li.selected,ul.conversations>li.submission.selected ul>li,ul.conversations>li.submission.selected ul>li.header,div.conversations>ul>li.selected,div.conversations>ul>li.submission.selected ul>li,div.conversations>ul>li.submission.selected ul>li.header{
+  background-color:#ecfacb; /*light*/
+}
+
+ul.messages .audience .active-filter,ul.conversations .audience .active-filter,div.conversations>ul .audience .active-filter{
+  background-color:#769F19; /*dark*/
+}
+
+
+#messages>ul.messages>li.selected{
+  background-color:#ecfacb; /*light*/
+}
+
+ul.messages li.selected .message_attachments{
+  border-top-color:#b7c98f;
+}
+
+
+#menu_enrollments .customListOpen {
+  color: #769F19;
+}
+
+#change_gradebook_version_link_holder a {
+  color: #769F19 !important;
+
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus,
+input[type="datetime"]:focus, input[type="datetime-local"]:focus,
+input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus,
+input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus,
+input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
+input[type="color"]:focus, .uneditable-input:focus {
+    border-color: rgba(118, 159, 25, 0.8);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(118, 159, 25, 0.075), 0 0 8px rgba(118, 159, 25, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(118, 159, 25, 0.075), 0 0 8px rgba(118, 159, 25, 0.6);
+    box-shadow: inset 0 1px 1px rgba(118, 159, 25, 0.075), 0 0 8px rgba(118, 159, 25, 0.6)
+}
+
+
+.list-view a.active {
+    background-color: #ecfacb;
+    border-bottom-color: #D1D3D7;
+    border-top-color: #ecfacb;
+}
+
+.list-view a.active:hover {
+    background-color: #d7eaab;
+}
+
+
+.menu-item.hover .menu-item-title {
+    text-shadow: none;
+    border-top-color: #cccccc;
+    border-left-color: #cccccc;
+    border-right-color: #cccccc;
+    background-color: #ecfacb
+}
+
+.menu-item .menu-item-drop li:hover {
+    background-color: #ecfacb;
+}
+
+.menu-item.hover .menu-item-title {
+    text-shadow: none;
+    color: #555;
+    border-top-color: #cccccc;
+    border-left-color: #cccccc;
+    border-right-color: #cccccc;
+    background-color: #f3f4f5
+}
+
+.stream_header:hover {
+    background: #ecfacb; /*light*/
+}
+
+.stream-details tr:hover {
+    background: #ecfacb
+}
+
+.token_input.active{
+  box-shadow: 0px 0px 3px 2px #ecfacb;
+}
+
+
+#actions .menus>li.selected>div li a:hover, #conversation_actions.selected>div li a:hover {
+    background-color:#769F19; /*dark*/
+    color: white;
+    text-shadow: 0px 1px 1px #0276aa
+}
+
+#help-btn:hover, #help-btn:focus {
+    color: #769F19; /*dark*/
+    text-decoration: none
+}
+
+.ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item a.ui-state-active,
+.ui-menu .ui-menu-item .ui-progressbar a.ui-widget-header, .ui-progressbar .ui-menu .ui-menu-item a.ui-widget-header,
+.ui-menu .ui-menu-item a.ui-state-focus {
+    background-color:#769F19; /*dark*/
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#0abeff',EndColorStr='#769F19')";
+    zoom: 1;
+    font-weight: normal;
+    margin: -1px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+
+#right-side {
+    margin: 0;
+    margin-left: 10px;
+    width: 240px;
+    padding: 13px;
+    background: #ecfacb; /*light*/
+}
+
+#calendar-app .fc-state-highlight, #calendar-drag-and-drop-container .fc-state-highlight {
+    background-color: #ecfacb; /*light*/
+    box-shadow: none
+}
+
+#header-img{
+	border-radius: 10px;
+	background-image: url("https://mbta.me/web/static/canvas/header-img4.jpg");
+	min-height: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#mobile-header{
+	min-height: 60px;
+	padding-top:10px;
+	padding-bottom: 5px;
+}
+
+.header-txt{
+	font-size: 20px;
+	
+}
+
+.header-icon{
+	font-size: 30px;
+}
+
+#right-side button.button-sidebar-wide {
+	width: 230px;
+}
+
+#message-icon{
+	margin-left:10px;
+	opacity: .50;
+}
+
+#message-icon:hover{
+  opacity: 1;
+  -webkit-transform: rotate(20deg);
+  -moz-transform:    rotate(20deg);
+  -ms-transform:     rotate(20deg);
+  -o-transform:      rotate(20deg);
+  transform:         rotate(20deg);
+}
+
+/*#header-title:hover{
+  -webkit-transform: scale(1.15);
+  -moz-transform:    scale(1.15);
+  -ms-transform:     scale(1.15);
+  -o-transform:      scale(1.15);
+  transform:         scale(1.15);
+}*/
+
+.tickercontainer {
+	width: 100%;
+	height: 26px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f6de4a;
+}
+
+.tickercontainer-success {
+	width: 100%;
+	height: 26px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #5cb85c;
+}
+
+.tickercontainer-canvas-success {
+	width: 100%;
+	height: 26px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #769f19;
+}
+
+.tickercontainer-info {
+	width: 100%;
+	height: 26px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #46b8da;
+}
+
+.conversations{
+	margin-top:20px;
+}
