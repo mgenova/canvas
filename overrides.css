@@ -395,3 +395,12 @@ input[type="color"]:focus, .uneditable-input:focus {
 .conversations{
 	margin-top:20px;
 }
+
+code {
+  font-family: "Courier New",monospace;
+  font-size: 10px;
+  padding: 0px 0px;
+  color: #918F8F;
+  background-color: none;
+  border: 0px;
+}
